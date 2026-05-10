@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="assets/style.css">
+  <!-- AOS ANIMATION -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="relative min-h-screen bg-gradient-to-br from-[#FFF8F2] via-[#F7E7CE] to-[#EADBC8] overflow-x-hidden">
@@ -141,7 +143,7 @@
   </div>
 </div>
 <!-- HERO -->
-<section class="pt-32 pb-16 text-center">
+<section class="pt-32 pb-16 text-center" data-aos="fade-up">
 
   <div class="max-w-4xl mx-auto px-4">
 
@@ -197,7 +199,73 @@
   </div>
 
 </section>
-<section class="pt-24 md:pt-32">
+
+<!-- TRUST SECTION -->
+<section class="pb-16" data-aos="fade-up">
+
+  <div class="max-w-5xl mx-auto px-4">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+      <!-- 1 -->
+      <div class="bg-white/70 backdrop-blur rounded-2xl p-6 text-center border border-white/40 shadow-sm hover:shadow-xl transition">
+
+        <h3 class="text-3xl font-bold">
+          500+
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Tema Premium
+        </p>
+
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-white/70 backdrop-blur rounded-2xl p-6 text-center border border-white/40 shadow-sm hover:shadow-xl transition">
+
+        <h3 class="text-3xl font-bold">
+          1000+
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Client Puas
+        </p>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-white/70 backdrop-blur rounded-2xl p-6 text-center border border-white/40 shadow-sm hover:shadow-xl transition">
+
+        <h3 class="text-3xl font-bold">
+          24 Jam
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Proses Cepat
+        </p>
+
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-white/70 backdrop-blur rounded-2xl p-6 text-center border border-white/40 shadow-sm hover:shadow-xl transition">
+
+        <h3 class="text-3xl font-bold">
+          100%
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Mobile Friendly
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="pt-24 md:pt-32" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-4">
 
     <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12 max-w-3xl mx-auto leading-snug">
@@ -297,7 +365,7 @@
   <section class="max-w-6xl mx-auto px-4 pb-10">
   <div id="katalog" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 scroll-mt-36"></div>
 </section>
-<section id="paket" class="py-24">
+<section id="paket" class="py-24" data-aos="fade-up">
 
   <div class="max-w-7xl mx-auto px-4">
 
@@ -496,7 +564,7 @@
 
 </section>
     
-<section id="porto" class="max-w-6xl mx-auto px-4 py-16">
+<section id="porto" class="max-w-6xl mx-auto px-4 py-16" data-aos="fade-up">
 
   <h2 class="text-2xl font-bold text-center mb-10">
     Portfolio Kami
@@ -510,7 +578,7 @@
 
 </section>
   <!-- RESELLER -->
-<section id="reseller" class="py-20">
+<section id="reseller" class="py-20" data-aos="fade-up">
 
   <div class="max-w-6xl mx-auto px-4">
 
@@ -698,6 +766,14 @@ document.addEventListener("DOMContentLoaded", function () {
    </span>
 
 </a>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+AOS.init({
+  duration: 800,
+  once: true
+});
+</script>
 </body>
 </html>
