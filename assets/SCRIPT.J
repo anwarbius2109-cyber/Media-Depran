@@ -185,12 +185,16 @@ function renderPagination(){
 
 function nextPage(){
   const totalHalaman = Math.ceil(dataAktif.length / perHalaman);
+
   if(halaman < totalHalaman){
+
     halaman++;
     tampilkan();
 
-    const el = document.getElementById("katalog");
-    const y = el.getBoundingClientRect().top + window.pageYOffset - 100;
+    const el = document.getElementById("kategori");
+
+    const y = el.getBoundingClientRect().top
+            + window.pageYOffset - 80;
 
     window.scrollTo({
       top: y,
@@ -200,12 +204,16 @@ function nextPage(){
 }
 
 function prevPage(){
+
   if(halaman > 1){
+
     halaman--;
     tampilkan();
 
-    const el = document.getElementById("katalog");
-    const y = el.getBoundingClientRect().top + window.pageYOffset - 100;
+    const el = document.getElementById("kategori");
+
+    const y = el.getBoundingClientRect().top
+            + window.pageYOffset - 80;
 
     window.scrollTo({
       top: y,
